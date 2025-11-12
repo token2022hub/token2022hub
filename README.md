@@ -6,7 +6,7 @@ Empower networks of autonomous agents to compute, collaborate, and learn — wit
 Built on a hybrid security foundation that fuses Trusted Execution Environments (TEE) and Zero-Knowledge Proofs (ZK), our system enables verifiable, confidential, and compliant computation across multiple participants.
 
 Conceptual Model and Architecture
-Perhaps the most compelling scenario is when SynarkOS combines TEEs and ZK to leverage the strengths of each – this is a hybrid trust model that provides defense in depth. In hybrid mode, a typical pattern is: use a TEE to perform a heavy computation quickly and have the TEE itself generate a zero-knowledge proof of the computation for others to verify.
+Perhaps the most compelling scenario is when combines TEEs and ZK to leverage the strengths of each – this is a hybrid trust model that provides defense in depth. In hybrid mode, a typical pattern is: use a TEE to perform a heavy computation quickly and have the TEE itself generate a zero-knowledge proof of the computation for others to verify.
 
 How Hybrid Mode Works
 Imagine a complex machine learning inference: the model inference runs inside a TEE (ensuring data/model confidentiality and fast execution), and simultaneously, the enclave produces a zk-SNARK of the inference steps or final output. That proof can then be posted on a blockchain or sent to clients who didn't even participate in the computation, and they can verify the result was correct without trusting the TEE's owner.
